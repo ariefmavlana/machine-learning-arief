@@ -1,8 +1,8 @@
 {
-  "verified_on": "2026-10-02",
-  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_submission.py -q --tb=short",
+  "verified_on": "2026-10-03",
+  "command": ".venv\\Scripts\\python.exe -m pytest tests -q --tb=short --basetemp .cache\\pytest-manual-check",
   "exit_code": 0,
-  "passed": 6,
+  "passed": 11,
   "failed": 0,
   "scope": [
     "Both notebooks preserve code-cell count and original imports, retain required output, and validate against nbformat",
@@ -15,5 +15,10 @@
     "plots": 17,
     "contact_sheets": 3,
     "label_overlap_detected": false
+  },
+  "manual_checker": {
+    "passed": 13,
+    "total": 13,
+    "report": "manual-check-latest.json"
   }
 }

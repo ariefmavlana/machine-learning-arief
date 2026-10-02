@@ -1,6 +1,6 @@
 # Submission Machine Learning Arief Maulana
 
-Implementasi dua tahap clustering dan klasifikasi berdasarkan template resmi serta dataset modifikasi dari Google Drive. Kedua notebook menargetkan seluruh kriteria Advanced dan telah dijalankan dari kernel baru. Hasil akhir dan batas interpretasinya tersedia di [laporan implementasi](reports/hasil-implementasi.md).
+Proyek ini mengelompokkan transaksi dengan K-Means, lalu melatih model klasifikasi untuk memprediksi label cluster. Dataset dan notebook menggunakan berkas resmi kursus. Kedua notebook sudah dijalankan dari kernel baru; hasil analisis tersedia di [laporan implementasi](reports/hasil-implementasi.md).
 
 ## Berkas utama
 
@@ -8,9 +8,11 @@ Implementasi dua tahap clustering dan klasifikasi berdasarkan template resmi ser
 - [Notebook Clustering](submission/BMLP_Arief_Maulana/[Clustering]_Submission_Akhir_BMLP_Arief_Maulana.ipynb).
 - [Notebook Klasifikasi](submission/BMLP_Arief_Maulana/[Klasifikasi]_Submission_Akhir_BMLP_Arief_Maulana.ipynb).
 - [Dokumentasi ketentuan](docs/submission/README.md).
+- [Panduan test manual VS Code dan Jupyter](docs/submission/10-panduan-test-manual.md) serta [lembar pencatatan](docs/submission/11-lembar-hasil-test-manual.md).
+- [Hasil pengujian ulang dari ZIP](reports/hasil-pengujian-ulang.md).
 - [Metrik yang dapat dibaca program](reports/metrics.json) dan [checksum artefak](reports/manifest.json).
 
-ZIP berisi dua notebook dengan output, lima model, dua CSV hasil clustering, dan snapshot CSV sumber untuk eksekusi ulang offline. Tidak ada AutoML. Model `.h5` menggunakan `joblib.dump()` sesuai template.
+ZIP berisi dua notebook dengan output, lima model, dua CSV hasil clustering, dan CSV sumber untuk eksekusi ulang offline. Model `.h5` disimpan menggunakan `joblib.dump()` sesuai template.
 
 ## Hasil eksperimen
 
@@ -18,7 +20,7 @@ Dataset aktual: 2.537 baris dan 16 kolom. Setelah dropna, duplikat, dan outlier 
 
 Decision Tree, Random Forest, dan Random Forest hasil tuning memperoleh accuracy serta F1 macro 1,0 pada 389 observasi testing; training berisi 1.556 observasi. Tuning menguji 18 kombinasi dengan 5-fold CV pada training.
 
-Interpretasi hasil harus mempertimbangkan bahwa kode kategori Location menyumbang sekitar 95,73% dari jumlah varians fitur clustering. Kedua label merupakan pembagian K-Means pada dataset ini, sehingga skor klasifikasi mengukur kemampuan meniru label tersebut. Ini belum menjadi bukti model fraud detection atau evaluasi seluruh pipeline pada transaksi baru.
+Kode kategori Location menyumbang sekitar 95,73% dari jumlah varians fitur clustering dan sangat memengaruhi pembagian kelompok. Skor klasifikasi mengukur prediksi label K-Means tersebut. Data tidak menyediakan label fraud terverifikasi; kemampuan mendeteksi fraud dan kinerja seluruh pipeline pada transaksi baru belum diuji.
 
 ## Menjalankan ulang
 
@@ -42,6 +44,8 @@ uv pip install --python .venv\Scripts\python.exe -r requirements-lock.txt
 
 Untuk eksekusi notebook secara manual, buka notebook dari folder `submission/BMLP_Arief_Maulana`, pilih kernel environment proyek, dan jalankan Clustering dahulu kemudian Klasifikasi. Semua CSV serta model memakai path relatif dalam folder yang sama. Import cell tetap sama persis dengan template.
 
+Untuk menguji tanpa mengubah artefak utama, jalankan `scripts/prepare_manual.ps1` dan ikuti [panduan manual](docs/submission/10-panduan-test-manual.md). Script mengambil salinan dari ZIP dengan output notebook kosong dan tanpa model/CSV hasil sebelumnya. Sesudah Run All dan Save di GUI, gunakan `scripts/manual_check.py --folder` terhadap lokasi sesi untuk pemeriksaan 13 kontrak hasil.
+
 ## Struktur proyek
 
 ```text
@@ -55,4 +59,4 @@ reports/                    Metrik, checksum, grafik, dan laporan
 docs/submission/            Dokumentasi ketentuan dan checklist
 ```
 
-Bagian jawaban interpretasi template diisi dengan hasil setiap cluster. Markdown tambahan bernama `Penilaian (Opsional)` mengikuti panduan pengguna. Penyesuaian kode pendamping dilakukan pada cell yang relevan untuk cakupan kategori, keterbacaan plot, evaluasi, serta bukti eksekusi; tidak ditambahkan code cell atau import baru. Nilai resmi tetap ditentukan reviewer.
+Analisis setiap cluster tersedia pada bagian interpretasi notebook. Penjelasan tambahan ditempatkan pada markdown `Penilaian (Opsional)` sesuai panduan submission. Jumlah code cell dan import mengikuti template asli. Penilaian akhir dilakukan oleh reviewer kursus.

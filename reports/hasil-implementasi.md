@@ -6,7 +6,7 @@ Implementasi disiapkan pada 2 Oktober 2026 untuk seluruh kriteria Advanced. Dua 
 
 ## Sumber dan lingkungan eksekusi
 
-Template diunduh dari tautan Colab yang diberikan pengguna. Dataset `bank_transactions_data_edited.csv` diunduh dari file ID `1gnLO9qvEPqv1uBt1928AcsCmdvzqjC5m` dalam folder Google Drive yang ditentukan. Snapshot sumber dan hash tersedia pada [manifest](manifest.json).
+Template diunduh dari tautan Colab pada ketentuan berkas submission. Dataset `bank_transactions_data_edited.csv` diunduh dari file ID `1gnLO9qvEPqv1uBt1928AcsCmdvzqjC5m` dalam folder Google Drive kursus. Salinan sumber dan hash tersedia pada [manifest](manifest.json).
 
 Python 3.12.14, scikit-learn 1.7.0, pandas 2.2.3, NumPy 2.2.6, SciPy 1.15.3, Yellowbrick 1.5, dan joblib 1.5.1 digunakan. Setuptools menyediakan kompatibilitas distutils yang dibutuhkan Yellowbrick pada Python 3.12. Cache dan konfigurasi runtime diarahkan ke workspace tanpa menambah import pada notebook.
 
@@ -59,7 +59,7 @@ Dua komponen PCA menjelaskan **97,3178%** varians. Silhouette pada dua ruang ber
 | 0 | 980 | 45,0551 | 18–80 | 255,5479 | 0,32–903,19 | 22 |
 | 1 | 965 | 44,3254 | 18–80 | 258,1487 | 0,26–889,01 | 21 |
 
-Perbedaan mean usia dan transaksi relatif kecil; kedua cluster memiliki rentang luas. Pembagian terutama berkaitan dengan kode kategori Location: fitur ini menyumbang **95,7262%** dari jumlah varians fitur masukan. LabelEncoder mengikuti kategori nominal, sehingga jarak kode tidak bermakna sebagai jarak geografis. Penjelasan rinci mean/min/max dan mode setiap cluster tersedia pada notebook; label tidak diberi persona fraud atau aman.
+Perbedaan rata-rata usia kedua cluster sekitar 0,73 tahun, sedangkan perbedaan rata-rata nilai transaksi sekitar 2,60. Keduanya memiliki rentang usia 18–80 tahun. Pembagian terutama berkaitan dengan kode kategori Location: fitur ini menyumbang **95,7262%** dari jumlah varians fitur masukan. Selisih kode LabelEncoder pada nama kota tidak menunjukkan jarak geografis. Ringkasan mean/min/max dan mode setiap cluster tersedia pada notebook.
 
 ## Hasil klasifikasi dan tuning
 
@@ -88,7 +88,7 @@ ZIP berisi sepuluh file: dua notebook, lima model, dua CSV hasil clustering, ser
 - Template klasifikasi memang memiliki cell One Hot Encoding, sehingga kebutuhan kategori string pada CSV inverse dapat ditangani tanpa menambah code cell.
 - Template PCA secara eksplisit meminta K-Means baru yang dilatih pada data dua komponen; `PCA_model_clustering.h5` berisi estimator K-Means tersebut.
 - Binning menambah kolom baru dan tidak mengganti fitur numerik asal, sehingga inverse numerik tetap dapat memulihkan nilai asli.
-- Interpretasi sebelum dan sesudah inverse diisi pada dua slot jawaban asli. Markdown tambahan `Penilaian (Opsional)` mengikuti panduan pengguna, walaupun teks peringatan awal template lebih ketat.
+- Interpretasi sebelum dan sesudah inverse diisi pada dua slot jawaban asli. Markdown tambahan `Penilaian (Opsional)` mengikuti panduan submission, walaupun teks peringatan awal template lebih ketat.
 - Penyesuaian di dalam code cell yang tersedia hanya mendukung kelengkapan rubrik, keterbacaan, determinisme, evaluasi, dan bukti penyimpanan. Import asli serta jumlah code cell tetap sama.
 
 Catatan konflik teks dan interpretasi lain tetap tersedia di [dokumen ambiguitas](../docs/submission/07-ambiguitas.md). Nilai resmi serta keputusan penerimaan diberikan oleh reviewer kursus.

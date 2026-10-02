@@ -93,7 +93,7 @@ for column in eda_categorical_cols:
     axis.set_ylabel('Jumlah observasi')
     plt.show()
 
-# Tantangan visualisasi kepadatan distribusi yang disediakan template.
+# Kepadatan nilai transaksi pada setiap pekerjaan.
 plt.figure(figsize=(12, 6))
 sns.violinplot(x='CustomerOccupation', y='TransactionAmount', data=df,
                inner='quartile', cut=0)

@@ -1,0 +1,16 @@
+{
+  "completed_date": "2026-10-03",
+  "timezone": "Asia/Jakarta",
+  "pytest_passed": 11,
+  "manual_checker_passed": 13,
+  "manual_checker_total": 13,
+  "original_zip_unchanged": true,
+  "prepare_script_executed": true,
+  "workspace_kernel_listing_verified": true,
+  "powershell_manual_zip_byte_comparison_passed": true,
+  "manual_zip_files": 10,
+  "internal_document_links_verified": 135,
+  "gui_execution_performed": false,
+  "replay_report": "retest-results.json",
+  "checker_report": "manual-check-smoke.json"
+}

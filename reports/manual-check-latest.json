@@ -1,0 +1,132 @@
+{
+  "folder": "F:\\portfolio-arief\\ml-arief\\submission\\BMLP_Arief_Maulana",
+  "passed": true,
+  "passed_checks": 13,
+  "total_checks": 13,
+  "checks": [
+    {
+      "name": "required_files",
+      "passed": true,
+      "details": {
+        "files": 10
+      }
+    },
+    {
+      "name": "notebook_clustering",
+      "passed": true,
+      "details": {
+        "code_cells": 35,
+        "plots": 17,
+        "saved_errors": 0
+      }
+    },
+    {
+      "name": "notebook_classification",
+      "passed": true,
+      "details": {
+        "code_cells": 13,
+        "plots": 0,
+        "saved_errors": 0
+      }
+    },
+    {
+      "name": "raw_dataset",
+      "passed": true,
+      "details": {
+        "rows": 2537,
+        "columns": 16,
+        "missing_cells": 403,
+        "duplicates": 21
+      }
+    },
+    {
+      "name": "csv_alignment",
+      "passed": true,
+      "details": {
+        "rows": 1945,
+        "columns": 11,
+        "target_counts": {
+          "0": 980,
+          "1": 965
+        }
+      }
+    },
+    {
+      "name": "inverse_roundtrip",
+      "passed": true,
+      "details": {
+        "numerical_max_tolerance": 1e-09,
+        "rows_verified": 1945
+      }
+    },
+    {
+      "name": "clustering_model",
+      "passed": true,
+      "details": {
+        "clusters": 2,
+        "silhouette": 0.572159925838334,
+        "features": 10
+      }
+    },
+    {
+      "name": "pca_model",
+      "passed": true,
+      "details": {
+        "silhouette": 0.6017426992642231,
+        "explained_variance": 0.9731776820438516
+      }
+    },
+    {
+      "name": "classification_split",
+      "passed": true,
+      "details": {
+        "train": 1556,
+        "test": 389,
+        "features": 55
+      }
+    },
+    {
+      "name": "decision_tree",
+      "passed": true,
+      "details": {
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0
+      }
+    },
+    {
+      "name": "random_forest",
+      "passed": true,
+      "details": {
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0
+      }
+    },
+    {
+      "name": "tuned_random_forest",
+      "passed": true,
+      "details": {
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0
+      }
+    },
+    {
+      "name": "tuning_cv",
+      "passed": true,
+      "details": {
+        "best_params": {
+          "max_depth": null,
+          "min_samples_leaf": 1,
+          "n_estimators": 200
+        },
+        "best_cv_accuracy": 1.0,
+        "candidates": 18
+      }
+    }
+  ]
+}

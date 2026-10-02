@@ -1,8 +1,8 @@
 # Dokumentasi Submission Machine Learning BMLP
 
-Dokumentasi ini membantu menyiapkan submission dua tahap: clustering menghasilkan label `Target`, kemudian klasifikasi memprediksi label tersebut. Isinya disusun dari pengantar dan dua berkas ketentuan yang dikirim pengguna pada 2 Oktober 2026. Fokus pertama adalah memenuhi seluruh Basic dan aturan umum; peningkatan Skilled dan Advanced dilakukan setelah itu.
+Dokumentasi ini mencakup dua tahap: clustering menghasilkan label `Target`, kemudian klasifikasi memprediksi label tersebut. Acuannya adalah pengantar, kriteria penilaian, dan ketentuan berkas submission yang dicatat pada 2 Oktober 2026. Pemeriksaan dimulai dari persyaratan Basic, kemudian berlanjut ke Skilled dan Advanced.
 
-Dokumen ini merupakan acuan ketentuan, bukan pemberian nilai resmi. Implementasi kedua notebook kini tersedia di [proyek](../../README.md); hasil eksperimen aktual dan verifikasi dicatat pada [laporan implementasi](../../reports/hasil-implementasi.md). Tidak ada jaminan kelulusan yang diasumsikan.
+Kedua notebook tersedia di [proyek](../../README.md). Hasil eksperimen dan pemeriksaannya dicatat pada [laporan implementasi](../../reports/hasil-implementasi.md). Penilaian akhir dilakukan oleh reviewer kursus.
 
 ## Peta dokumen
 
@@ -17,6 +17,8 @@ Dokumen ini merupakan acuan ketentuan, bukan pemberian nilai resmi. Implementasi
 | [07 Ambiguitas sumber](07-ambiguitas.md) | Ketidakkonsistenan teks dan interpretasi sementara yang dinyatakan secara terbuka. |
 | [08 Checklist submission](08-checklist.md) | Daftar pemeriksaan Basic, peningkatan level, dan pengiriman. |
 | [09 Sumber dan keterlacakan](09-sumber.md) | Salinan sumber, tautan resmi yang diberikan, referensi teknis, dan batas verifikasi. |
+| [10 Panduan test manual](10-panduan-test-manual.md) | Setup VS Code/Jupyter, expected tiap tahap, Run All, pemeriksaan hasil, troubleshooting, dan ZIP. |
+| [11 Lembar hasil test manual](11-lembar-hasil-test-manual.md) | Pencatatan sesi, status kasus, bukti, dan penyelesaian masalah oleh penguji manual. |
 
 ## Cara menggunakan dokumentasi
 

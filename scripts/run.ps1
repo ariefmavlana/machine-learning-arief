@@ -22,7 +22,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Pengisian template gagal.' }
     & $pythonPath scripts\execute_submission.py
     if ($LASTEXITCODE -ne 0) { throw 'Eksekusi notebook gagal.' }
-    & $pythonPath -m pytest tests\test_submission.py -q
+    & $pythonPath -m pytest tests -q --basetemp .cache\pytest-manual-check
     if ($LASTEXITCODE -ne 0) { throw 'Verifikasi submission gagal.' }
 } finally {
     Pop-Location

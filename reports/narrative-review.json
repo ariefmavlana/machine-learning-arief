@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-03",
+  "changes": [
+    {
+      "notebook": "[Clustering]_Submission_Akhir_BMLP_Arief_Maulana.ipynb",
+      "code_cells": 35,
+      "execution_and_outputs_unchanged": true,
+      "calculation_code_unchanged": true
+    },
+    {
+      "notebook": "[Klasifikasi]_Submission_Akhir_BMLP_Arief_Maulana.ipynb",
+      "code_cells": 13,
+      "execution_and_outputs_unchanged": true,
+      "calculation_code_unchanged": true
+    }
+  ],
+  "models_and_csv_unchanged": true,
+  "zip_before": "6f86a2b72a018b0b1bbec15db23813e44a9ddf3c0214d34b17215caa8029c30d",
+  "zip_after": "053925d843c7710d850cfba49733446deb2c3503499933c9310395bca47ae98a",
+  "zip_files": 10,
+  "pytest": {
+    "passed": 11,
+    "failed": 0
+  },
+  "manual_checker": {
+    "passed": 13,
+    "total": 13
+  },
+  "comparison_to_previous_submission_verified": true
+}

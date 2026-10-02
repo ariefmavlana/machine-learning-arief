@@ -1,4 +1,5 @@
 .venv/
+.venv-jupyter-ui/
 .cache/
 __pycache__/
 .pytest_cache/
