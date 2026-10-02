@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "[Clustering]_Submission_Akhir_BMLP_Arief_Maulana.ipynb": "c97c37c64270467374186af6ef3d67aca72cd833e9a2f83c0379d60b64bb5506",
+    "[Klasifikasi]_Submission_Akhir_BMLP_Arief_Maulana.ipynb": "1cf1834e6429f270562cb3b990324f9ffa21131eabcbfb5a571209a16c2782c1",
+    "bank_transactions_data_edited.csv": "7192913b3fde6e97494df8c18f4601e5f2fbcf7cb3d2a15b632ffb7eb22e85ea",
+    "data_clustering.csv": "a51a1dbef6229c901c73285fb822f461977db37adabb5a1a20b9d36fdbb3096d",
+    "data_clustering_inverse.csv": "c7628acb56ab11985ca9bf7a7fbf3f4f61c040092fcd7f40d88fa6443b7f6319",
+    "decision_tree_model.h5": "b0442590cdd1d44ff57a248d5e2819337286ec464c99f10f90b9d9b1243f9d94",
+    "explore_RandomForest_classification.h5": "aac00e8a93919bf212b29796691546f49e0a1c33c0d0be8e114f017e62cb5848",
+    "model_clustering.h5": "d68851a3146a2d5e74c6753e9904e7fc81528d99231199c1249ecf7a4ec6988e",
+    "PCA_model_clustering.h5": "ab07437f026f790f5541ac17977bab98922d631329c68ccdcec5f3bb18afbc1c",
+    "tuning_classification.h5": "628f4bc320c6cdf20958736c7193d1ecd57c2cc0e675e9a8b0e5835db74df2b1"
+  },
+  "source_sha256": {
+    "clustering.ipynb": "bd45bcb375085eb2fc37cb4c3c9926bde3c15090d5e40e14bb3b6b4288113138",
+    "classification.ipynb": "8470f900fdba04f656bb3fbf5bb088853459b5eb3484ab4ea20a4598fc92f91c",
+    "bank_transactions_data_edited.csv": "7192913b3fde6e97494df8c18f4601e5f2fbcf7cb3d2a15b632ffb7eb22e85ea"
+  }
+}

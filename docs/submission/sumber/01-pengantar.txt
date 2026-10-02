@@ -1,0 +1,65 @@
+PENGANTAR
+
+Transkripsi pengantar yang dikirim pengguna pada 2 Oktober 2026. Tata letak, spasi, dan baris kosong dinormalisasi; tabel disajikan sebagai teks. Materi kriteria dan ketentuan berkas berada pada dua salinan attachment terpisah.
+
+Pada proyek ini, Anda akan membangun model machine learning dengan pendekatan supervised dan unsupervised learning. Anda dapat memilih dari beberapa dataset tanpa label yang kami sediakan atau mencarinya sendiri sesuai dengan preferensi masing-masing.
+
+Langkah pertama adalah menerapkan teknik unsupervised learning, khususnya clustering, untuk menghasilkan label atau kelas pada dataset tersebut. Setelah mendapatkan label atau kelas dari proses clustering, Anda akan menggabungkan informasi ini dengan dataset asli.
+
+Dengan dataset yang telah dilengkapi dengan label atau kelas, Anda akan menerapkan metode supervised learning, yaitu klasifikasi, untuk mengembangkan model yang mampu memprediksi kelas berdasarkan fitur yang ada. Proyek ini dirancang untuk menilai kemampuan Anda dalam mengintegrasikan kedua metode tersebut dan memecahkan masalah yang relevan dengan teknik machine learning yang telah dipelajari.
+
+Panduan Dataset untuk Submission Kelas
+
+Untuk memastikan pengerjaan proyek clustering berjalan terstruktur dan sesuai standar evaluasi, peserta diwajibkan mengikuti template yang telah disediakan. Setiap langkah harus dilakukan secara sistematis dan mematuhi instruksi yang diberikan dalam template proyek. Berikut ini hal-hal yang perlu diperhatikan sebelum memulai pengerjaan projek:
+
+- Eksekusi Notebook dengan Dataset yang Disediakan. Adapun dataset yang dimaksud bisa dilihat di Tab Berkas Submission.
+- Notebook harus dijalankan tanpa error sebelum dikirimkan untuk memastikan seluruh proses berjalan dengan baik.
+- Dataset yang digunakan dalam notebook clustering untuk projek kali ini yaitu:
+  dataset_clustering_project - Google Drive
+  https://drive.google.com/drive/folders/1Zs7VmPZ-jNwsRlMKH65Ea-LApSwx6lKx?hl=ID
+  Dataset ini ada hasil modifikasi dari dataset Kaggle “Bank Transaction Dataset for Fraud Detection” untuk mencapai capaian penilaian kriteria. Silahkan download versi yang google drive, jangan yang dari Kaggle karena akan ada perbedaan analisis nantinya.
+- Memastikan memenuhi standar Basic submission, baru lanjut ke Skilled dan Advanced.
+- Mengikuti template (Fill in the Blanks) dalam notebook proyek sesuai struktur yang diberikan. Adapun template notebook yang dimaksud bisa dilihat di Tab Berkas Submission.
+  Pada tahap import dependencies (library, fungsi, dan sebagainya), TIDAK perlu menambahkan apa pun lagi dan cukup jalankan cell code yang sudah disediakan.
+
+Fig 1. Cell Import Library
+https://assets.cdn.dicoding.com/original/academy/dos-aaae07b93e9e70a95d18b453a028ba8f20251105094826.png
+
+- Terdapat markdown tambahan di luar markdown default notebook untuk memberikan konteks pada setiap bagian proyek. Silahkan lakukan penamaan markdown tambahan menjadi “Penilaian (Opsional)”.
+
+Fig 2. Struktur Markdown Clustering
+https://assets.cdn.dicoding.com/original/academy/dos-118f594d0e3af53fd8464c83d1c5770520251105110001.png
+
+Fig 3. Struktur Markdown Klasifikasi
+https://assets.cdn.dicoding.com/original/academy/dos-985547d64d8d5418a1db9ed75800edd820251105110125.png
+
+- Untuk meningkatkan kualitas dokumentasi dan memberikan pemahaman yang lebih baik terhadap proyek yang dikerjakan, peserta disarankan menambahkan penjelasan rinci pada setiap analisis dengan format berikut:
+  - Metode yang digunakan → Teknik atau algoritma yang diterapkan dalam tahap tersebut.
+  - Alasan penggunaan → Mengapa metode tersebut dipilih dan bagaimana relevansinya dengan proyek.
+  - Hasil yang didapat → Interpretasi hasil setelah metode diterapkan.
+
+Perhitungan Nilai
+
+Nilai akhir yang Anda dapatkan diperoleh melalui perhitungan formula berikut.
+
+Nilai Akhir = Total Points / Jumlah Kriteria
+
+Catatan:
+Perhitungan nilai akhir di atas digunakan apabila setiap kriteria mendapatkan nilai 2 pts atau tidak ada kriteria yang ditolak.
+
+Adapun untuk penilaian submission dapat dilihat pada tabel berikut.
+
+Ketentuan Penilaian
+
+Nilai Akhir | Nilai Dicoding | Nilai Huruf | Level of Mastery | Makna Nilai | Keterangan
+< 1 | Rejected | E | - | Tidak Lulus | Anda sudah mencoba, tetapi belum memenuhi kompetensi minimal.
+1 - <2 | Bintang 2 | D | Below Basic | Kurang | Anda sudah memenuhi semua kompetensi minimal, tetapi terdapat area yang masih bisa ditingkatkan.
+2 - <3 | Bintang 3 | C | Basic | Cukup | Anda sudah memenuhi semua kompetensi minimal dari learning objective.
+3 - <4 | Bintang 4 | B | Skilled | Mahir | Anda sudah memenuhi semua kompetensi dengan baik atau mahir.
+4 | Bintang 5 | A | Advanced | Tingkat Lanjut | Anda sudah memenuhi semua kompetensi dengan sangat baik atau tingkat lanjut.
+
+Tips untuk menyelesaikan Kriteria Wajib projek Clustering, berikut ini adalah urutan dalam pengerjaannya:
+https://assets.cdn.dicoding.com/original/academy/dos-1a6ac07e5b6deebbaa9b9e7492c62cba20250429144041.png
+
+2. Kemudian untuk menyelesaikan Kriteria Wajib projek Klasifikasi, berikut ini adalah tips urutan dalam pengerjaannya:
+https://assets.cdn.dicoding.com/original/academy/dos-a962968f062206df99c80e89604630e920250429141500.jpeg

@@ -1,0 +1,19 @@
+{
+  "verified_on": "2026-10-02",
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_submission.py -q --tb=short",
+  "exit_code": 0,
+  "passed": 6,
+  "failed": 0,
+  "scope": [
+    "Both notebooks preserve code-cell count and original imports, retain required output, and validate against nbformat",
+    "Inverse features match cleaned raw observations and clustering predictions match Target",
+    "Classification artifacts predict with identical held-out features and training-only CV",
+    "ZIP contains the final files with byte-for-byte consistency",
+    "Metrics report matches predictions from saved classifiers"
+  ],
+  "visual_audit": {
+    "plots": 17,
+    "contact_sheets": 3,
+    "label_overlap_detected": false
+  }
+}

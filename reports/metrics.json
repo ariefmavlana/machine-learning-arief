@@ -1,0 +1,134 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "sklearn": "1.7.0",
+    "pandas": "2.2.3",
+    "numpy": "2.2.6",
+    "joblib": "1.5.1"
+  },
+  "raw_rows": 2537,
+  "raw_columns": 16,
+  "raw_missing_cells": 403,
+  "raw_duplicates": 21,
+  "numerical_columns": [
+    "TransactionAmount",
+    "CustomerAge",
+    "TransactionDuration",
+    "LoginAttempts",
+    "AccountBalance"
+  ],
+  "dropped_columns": [
+    "TransactionID",
+    "AccountID",
+    "TransactionDate",
+    "DeviceID",
+    "IP Address",
+    "MerchantID",
+    "PreviousTransactionDate"
+  ],
+  "preprocessing": {
+    "after_dropna": 2156,
+    "after_duplicates": 2135,
+    "outlier_steps": [
+      {
+        "feature": "TransactionAmount",
+        "lower": -414.3325000000001,
+        "upper": 912.0075,
+        "removed": 93,
+        "remaining": 2042
+      },
+      {
+        "feature": "CustomerAge",
+        "lower": -21.0,
+        "upper": 107.0,
+        "removed": 0,
+        "remaining": 2042
+      },
+      {
+        "feature": "TransactionDuration",
+        "lower": -85.5,
+        "upper": 310.5,
+        "removed": 0,
+        "remaining": 2042
+      },
+      {
+        "feature": "LoginAttempts",
+        "lower": 1.0,
+        "upper": 1.0,
+        "removed": 97,
+        "remaining": 1945
+      },
+      {
+        "feature": "AccountBalance",
+        "lower": -7768.360000000001,
+        "upper": 16917.0,
+        "removed": 0,
+        "remaining": 1945
+      }
+    ],
+    "final_rows": 1945
+  },
+  "age_bins_original_scale": [
+    18.0,
+    32.0,
+    55.0,
+    80.0
+  ],
+  "clustering": {
+    "clusters": 2,
+    "silhouette": 0.572159925838334,
+    "location_variance_share": 0.9572617987309895,
+    "counts": {
+      "0": 980,
+      "1": 965
+    }
+  },
+  "pca": {
+    "silhouette": 0.6017426992642231,
+    "explained_variance": 0.9731776820438516
+  },
+  "split": {
+    "train": 1556,
+    "test": 389,
+    "features": 55
+  },
+  "classification": [
+    {
+      "name": "Decision Tree",
+      "file": "decision_tree_model.h5",
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0
+    },
+    {
+      "name": "Random Forest",
+      "file": "explore_RandomForest_classification.h5",
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0
+    },
+    {
+      "name": "Random Forest tuned",
+      "file": "tuning_classification.h5",
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0
+    }
+  ],
+  "tuning": {
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    "best_cv_accuracy": 1.0,
+    "candidates": 18
+  },
+  "figures": {
+    "clustering": 17,
+    "classification": 0
+  }
+}
